@@ -322,7 +322,8 @@ public class Level {
                                 if(bdd.CheckItemInventaire(12)!=true){
                                     //bdd.AddInventaireItem(12); // les clef !
                                     //Inventaire.AfficherInventaire(mEngine,AppContext,mScene,bdd,mInventaireTextureRegion);
-                                    Popup.AfficherPopup(lvlCourant,"Ceci est un test de popup !!!! Je m'appel Monsieur Godart.");
+                                    DialogueXML dialogXml = new DialogueXML("prisonnier", "noItem", AppContext);
+                                    Popup.AfficherDialogue(lvlCourant,dialogXml,0);
                                 }
                                 else {
                                     Toast toast = Toast.makeText(AppContext, "Je suis le PNJ " + lPnj.get(id).getNomPnj() + " !", Toast.LENGTH_SHORT);
@@ -351,7 +352,6 @@ public class Level {
                 Popup.AfficherPopup(lvlCourant,"Me faire choper par les poulets pour une volaille c'est incroyable." +
                         " Il faut que je trouve un moyen de me sortir d'ici au plus vite.");
                 myScene.setVisited(true);
-
 
             bdd.VisitedScene(myScene.getId(),true);
         }

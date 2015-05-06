@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<npcs>
+    <npc name="Samurai">
+        <dialog id="1" condition="noItem">
+            <text>Je suis un samurai</text>
+            <choice goTo="2">Blablabla</choice>
+            <choice goTo="3">J'ai volé un poulet...</choice>
+        </dialog>
+        <dialog id="2" condition="noItem">
+            <text>Hahahahaha</text>
+        </dialog>
+        <dialog id="3" condition="noItem">
+            <text>blablaablablabla</text>
+        </dialog>
+        <dialog id="4" condition="explosif">
+            <text> Bouuuuuuuuuum</text>
+        </dialog>
+    </npc>
+    <npc name="prisonnier">
+        <dialog id="1" condition="noItem">
+            <text>Prisonnier: T’en a pris pour combien ?</text>
+            <choice goTo="2">Du tourisme !</choice>
+            <choice goTo="3">J'ai volé un poulet...</choice>
+        </dialog>
+        <dialog id="2" condition="noItem">
+            <text> Moi: Pour 2 ans… </text>
+        </dialog>
+        <dialog id="3" condition="noItem">
+            <text>Prisonnier: pff, moi c’est la peine de mort, je n’ai pas de temps à perdre avec toi.</text>
+        </dialog>
+        <dialog id="4" condition="explosif">
+            <text> Bouuuuuuuuuum</text>
+        </dialog>
+    </npc>
+</npcs>
